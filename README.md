@@ -1,5 +1,5 @@
 # PC-Notification-Lib
-Simple GTAG Notification lib by Lars remake for PC
+Simple GTAG Notification lib by Lars remake for PC originally made for my menu Kaen Pad
 
 # How to install:
 Put "PCNotifications.dll" in the "plugins" folder in the BepInEx folder.
