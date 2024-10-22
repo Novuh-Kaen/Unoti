@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using BepInEx;
 using System.Collections.Generic;
-using System;
 
 namespace Notifications
 {
@@ -14,7 +13,10 @@ namespace Notifications
 
         public static void SendNotification(string customThing, string notiText)
         {
-            notifications.Add($"[ {customThing} ] {notiText}");
+            if (notifications.Count < 6)
+            {
+                notifications.Add($"[ {customThing} ] {notiText}");
+            }
 
             if (notifications.Count == 1)
             {
@@ -37,11 +39,6 @@ namespace Notifications
                     nextNotificationTime = Time.time + notificationDuration;
                 }
             }
-
-            if (notifications.Count > 10)
-            {
-                notifications.RemoveAt(0);
-            }
         }
 
         void OnGUI()
@@ -52,21 +49,21 @@ namespace Notifications
                 normal = new GUIStyleState
                 {
                     textColor = Color.white,
-                    background = backgroundThing(2, 2, new Color(0.05f, 0.05f, 0.05f, 0.8f))
+                    background = CreateBackgroundTexture(2, 2, new Color(0.05f, 0.05f, 0.05f, 0.8f))
                 },
                 padding = new RectOffset(10, 10, 5, 5)
             };
 
-            GUILayout.BeginVertical(Array.Empty<GUILayoutOption>());
-            for (int i = 0; i < notifications.Count; i++)
+            GUILayout.BeginVertical();
+            foreach (var notification in notifications)
             {
-                float width = GUI.skin.label.CalcSize(new GUIContent(notifications[i])).x;
-                GUILayout.Label(notifications[i], guistyle, Array.Empty<GUILayoutOption>());
+                GUILayout.Space(5);
+                GUILayout.Label(notification, guistyle);
             }
             GUILayout.EndVertical();
         }
 
-        Texture2D backgroundThing(int width, int height, Color color)
+        private Texture2D CreateBackgroundTexture(int width, int height, Color color)
         {
             Texture2D texture = new Texture2D(width, height);
             Color[] pixels = new Color[width * height];
@@ -78,7 +75,6 @@ namespace Notifications
 
             texture.SetPixels(pixels);
             texture.Apply();
-
             return texture;
         }
     }
