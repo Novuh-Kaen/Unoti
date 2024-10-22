@@ -2,7 +2,18 @@
 Simple GTAG Notification lib by Lars remake for PC originally made for my menu Kaen Pad
 
 # How to install:
-Put "PC Notifications.dll" in the "plugins" folder in the BepInEx folder.
+1. Download the mod file.
+2. Place the `.dll` file in the appropriate plugins folder based on your installation:
+
+   - **Steam Directory**:
+     ```
+     C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\BepInEx\plugins
+     ```
+
+   - **Oculus Directory**:
+     ```
+     C:\Program Files\Oculus\Software\Software\gorilla-tag\Gorilla Tag_Data\Plugins
+     ```
 
 # How to use:
 Add "PC Notifications.dll" as an assembly reference to your project.
