@@ -5,7 +5,7 @@ Simple GTAG Notification lib by Lars remake for PC originally made for my menu K
 Put "PCNotifications.dll" in the "plugins" folder in the BepInEx folder.
 
 # How to use:
-Add "PCNotifications.dll" as an assembly reference to your project.
+Add "PC Notifications.dll" as an assembly reference to your project.
 
 Put "using Notifications;" at the top of the project.
 
