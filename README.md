@@ -1,5 +1,6 @@
 # PC-Notification-Lib
-Simple GTAG Notification lib by Lars remake for PC originally made for my menu Kaen Pad
+Simple PC Notification Library for Gorilla Tag
+Basically GTAG-NotificationLib by Lars remade for PC
 
 # How to install:
 1. Download the mod file.
