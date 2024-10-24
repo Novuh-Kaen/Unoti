@@ -1,6 +1,6 @@
 # PC-Notification-Lib
 Simple PC Notification Library for Gorilla Tag. 
-Basically (GTAG-NotificationLib)[https://github.com/larsl2005/GTAG-NotificationLib] by Lars remade for PC
+Basically GTAG-NotificationLib by Lars remade for PC
 
 # How to install:
 1. Download the mod file.
