@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Notifications
 {
-    [BepInPlugin("Novuh.PCNotifications", "PC Notification Library", "1.0.0")]
+    [BepInPlugin("Novuh.PCNotifications", "PC Notification Library", "1.0.2")]
     public class PCNotiLib : BaseUnityPlugin
     {
         private static List<string> notifications = new List<string>();
@@ -13,9 +13,16 @@ namespace Notifications
 
         public static void SendNotification(string customThing, string notiText)
         {
+            string skibidi = $"[ {customThing} ] {notiText}";
+
+            if (notifications.Count > 0 && notifications[notifications.Count - 1] == skibidi)
+            {
+                return;
+            }
+
             if (notifications.Count < 6)
             {
-                notifications.Add($"[ {customThing} ] {notiText}");
+                notifications.Add(skibidi);
             }
 
             if (notifications.Count == 1)
