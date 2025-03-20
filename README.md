@@ -1,25 +1,37 @@
 # Unoti
-Simple Notification Library for Unity games.
 
-# How to install:
-1. Download the mod file.
-2. Place the `.dll` file in the appropriate plugins folder based on your installation:
+A lightweight and easy-to-use notification library for Unity games and mods.
 
-   - **Steam Directory**:
-     ```
-     C:\Program Files (x86)\Steam\steamapps\common\GAME-NAME\BepInEx\plugins
-     ```
+---
 
-   - **Oculus Directory**:
-     ```
-     C:\Program Files\Oculus\Software\Software\GAME-NAME\Gorilla Tag_Data\Plugins
-     ```
+## 🔧 Installation
 
-# How to use:
-Add "PC Notifications.dll" as an assembly reference to your project.
+1. Download the `PC Notifications.dll` file.
+2. Place the `.dll` file into your game's plugin directory depending on your installation:
 
-Put "using Notifications;" at the top of the project.
+### 🟩 Steam Installation
+C:\Program Files (x86)\Steam\steamapps\common\GAME-NAME\BepInEx\plugins
 
-To send a notification, use "PCNotiLib.SendNotification("TEXT", "More text");" the notification will apear like this | [TEXT] More text
 
-To clear all notifications use PCNotiLib.Clear()
+### 🟦 Oculus Installation
+C:\Program Files\Oculus\Software\Software\GAME-NAME\Gorilla Tag_Data\Plugins
+
+---
+
+## 📦 Usage
+
+1. Add **PC Notifications.dll** as an assembly reference in your project.
+2. At the top of your script, include the namespace:
+   ```csharp
+   using Notifications;
+   ```
+3. To send a notification
+   ```csharp
+   PCNotiLib.SendNotification("Title", "Message text");
+   ```
+The notification will appear in this format: [Title] Message text
+
+4. To clear all active notifications:
+   ```csharp
+   PCNotiLib.Clear();
+   ```
