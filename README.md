@@ -45,8 +45,8 @@ C:\Program Files\Oculus\Software\Software\GAME-NAME\Gorilla Tag_Data\Plugins
 ---
 
 ## 🛠 Features
-- Lightweight .dll drop-in system
 - Simple API: SendNotification() and Clear()
+- Customizable via UnotiSettings
 - Works with Steam and Oculus installs
 - Easily extendable in your own Unity mods
 
