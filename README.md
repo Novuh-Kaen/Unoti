@@ -1,6 +1,5 @@
 # PC-Notification-Lib
-Simple PC Notification Library for Gorilla Tag. 
-Basically [GTAG-NotificationLib](https://github.com/larsl2005/GTAG-NotificationLib) by Lars remade for PC
+Simple PC Notification Library for Unity games.
 
 # How to install:
 1. Download the mod file.
@@ -8,12 +7,12 @@ Basically [GTAG-NotificationLib](https://github.com/larsl2005/GTAG-NotificationL
 
    - **Steam Directory**:
      ```
-     C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\BepInEx\plugins
+     C:\Program Files (x86)\Steam\steamapps\common\GAME-NAME\BepInEx\plugins
      ```
 
    - **Oculus Directory**:
      ```
-     C:\Program Files\Oculus\Software\Software\gorilla-tag\Gorilla Tag_Data\Plugins
+     C:\Program Files\Oculus\Software\Software\GAME-NAME\Gorilla Tag_Data\Plugins
      ```
 
 # How to use:
