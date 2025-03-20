@@ -35,3 +35,16 @@ C:\Program Files\Oculus\Software\Software\GAME-NAME\Gorilla Tag_Data\Plugins
    ```csharp
    PCNotiLib.Clear();
    ```
+
+## 🛠 Features
+- • Lightweight .dll drop-in system
+- • Simple API: SendNotification() and Clear()
+- • Works with Steam and Oculus installs
+- • Easily extendable in your own Unity mods
+
+## 🤝 Contributing
+Pull requests, suggestions, and bug reports are welcome!
+- • Fork the repo
+- • Create a feature branch
+- • Submit a pull request
+Feel free to open issues to discuss improvements or ideas.
