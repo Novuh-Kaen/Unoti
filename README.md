@@ -1,6 +1,6 @@
 # Unoti
 
-A lightweight, easy-to-use notification library for Unity mods with BepInEx.
+A lightweight, easy-to-use notification library for Unity mods with [BepInEx.](https://github.com/BepInEx/BepInEx)
 
 ---
 
