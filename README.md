@@ -23,17 +23,17 @@ C:\Program Files\Oculus\Software\Software\GAME-NAME\Gorilla Tag_Data\Plugins
 1. Add **Unoti.dll** as an assembly reference in your project.
 2. At the top of your script, include the namespace:
    ```csharp
-   using Notifications;
+   using Unoti;
    ```
 3. To send a notification
    ```csharp
-   Unoti.SendNotification("Title", "Message text");
+   UnotiAPI.SendNotification("Title", "Message text");
    ```
    The notification will appear in this format: [Title] Message text
 
 4. To clear all active notifications:
    ```csharp
-   Unoti.Clear();
+   UnotiAPI.Clear();
    ```
    
 ---
