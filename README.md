@@ -35,7 +35,13 @@ C:\Program Files\Oculus\Software\Software\GAME-NAME\Gorilla Tag_Data\Plugins
    ```csharp
    UnotiAPI.Clear();
    ```
-   
+
+5. (Optional) Customize notification settings: You can modify various display options using UnotiAPI.UnotiSettings. For example:
+   ```csharp
+   UnotiAPI.UnotiSettings.verticleSpacing = 100;
+   UnotiAPI.UnotiSettings.NotiPosition = UnotiAPI.NotificationPosition.CenterTop;
+   ```
+
 ---
 
 ## 🛠 Features
