@@ -29,7 +29,7 @@ C:\Program Files\Oculus\Software\Software\GAME-NAME\Gorilla Tag_Data\Plugins
    ```csharp
    PCNotiLib.SendNotification("Title", "Message text");
    ```
-The notification will appear in this format: [Title] Message text
+   The notification will appear in this format: [Title] Message text
 
 4. To clear all active notifications:
    ```csharp
