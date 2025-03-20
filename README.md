@@ -1,5 +1,5 @@
-# PC-Notification-Lib
-Simple PC Notification Library for Unity games.
+# Unoti
+Simple Notification Library for Unity games.
 
 # How to install:
 1. Download the mod file.
