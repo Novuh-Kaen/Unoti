@@ -14,7 +14,7 @@ C:\Program Files (x86)\Steam\steamapps\common\GAME-NAME\BepInEx\plugins
 
 
 ### 🟦 Oculus Installation
-C:\Program Files\Oculus\Software\Software\GAME-NAME\Gorilla Tag_Data\Plugins
+C:\Program Files\Oculus\Software\Software\GAME-NAME\GAME-NAME_Data\Plugins
 
 ---
 
